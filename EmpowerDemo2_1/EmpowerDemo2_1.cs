@@ -77,7 +77,7 @@ public class Script
 			engine.GenerateInformation("Element Name = " + element.Name);
 		}
 
-		var order = OrderFactory.CreateOrder("Order 1");
+		var order = OrderFactory.CreateOrder("Order 2");
 		order.Dispatch("Jan Staelens");
 	}
 }
