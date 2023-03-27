@@ -53,7 +53,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using Empower.Library.RoomTest;
+using Empower.Library.Room1;
 
 using Skyline.DataMiner.Automation;
 using Skyline.DataMiner.Core.DataMinerSystem.Automation;
@@ -80,7 +80,7 @@ public class Script
 			engine.GenerateInformation("Element Name = " + element.Name);
 		}
 
-		var order = OrderFactory.CreateOrder("Order 2");
+		var order = OrderFactory.CreateOrder("A cheeseburger.");
 		order.Dispatch("Jan Staelens");
 	}
 }
