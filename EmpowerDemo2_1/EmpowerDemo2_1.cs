@@ -69,6 +69,9 @@ public class Script
 	/// <param name="engine">Link with SLAutomation process.</param>
 	public void Run(Engine engine)
 	{
+		var valuex = System.Environment.GetEnvironmentVariable("SLC_EXTERNAL_DISPATCHER_KEY", EnvironmentVariableTarget.Machine);
+		engine.GenerateInformation("Value Found: " + valuex);
+
 		engine.GenerateInformation("Hello World");
 		var mySystem = engine.GetDms();
 		var allElements = mySystem.GetElements();
